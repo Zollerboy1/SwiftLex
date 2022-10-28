@@ -29,6 +29,9 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "SwiftLexTests",
-            dependencies: ["SwiftLex"]),
+            dependencies: ["SwiftLex"],
+            swiftSettings: [
+                .unsafeFlags(["-enable-bare-slash-regex"])
+            ]),
     ]
 )
