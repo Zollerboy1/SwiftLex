@@ -1,3 +1,7 @@
+#if canImport(_StringProcessing)
+import _StringProcessing
+#endif
+
 public struct Match<L: Lexer> {
     public enum Action {
         case push

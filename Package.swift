@@ -26,11 +26,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "SwiftLex",
-            dependencies: [],
-            swiftSettings: [
-                .unsafeFlags(["-enable-bare-slash-regex"])
-            ]
-        ),
+            dependencies: []),
         .testTarget(
             name: "SwiftLexTests",
             dependencies: ["SwiftLex"],

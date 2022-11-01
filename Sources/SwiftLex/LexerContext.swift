@@ -1,3 +1,7 @@
+#if canImport(_StringProcessing)
+import _StringProcessing
+#endif
+
 public class LexerContext<L: Lexer> {
     internal let lexer: L
 
